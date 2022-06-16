@@ -1,0 +1,112 @@
+@import "config";
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-size: 18px;
+  font-family: "DM Sans", sans-serif;
+  background: lighten($Soft-red, 30%);
+}
+
+.container {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  &-content {
+    width: 100%;
+
+    &-header {
+      background: $Soft-red;
+      color: $Cream;
+      height: 95px;
+      border-radius: 10px;
+
+      .balance {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+
+        .amount {
+          p {
+            font-size: 0.9rem;
+          }
+
+          h1 {
+            font-size: 1.6rem;
+            padding-top: 5px;
+          }
+        }
+      }
+    }
+
+    &-body {
+      margin-top: 10px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+
+      h2 {
+        font-size: 1.5rem;
+        color: $Dark-brown;
+        font-weight: 700;
+      }
+    }
+
+    hr {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    &-footer {
+      .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $Dark-brown;
+
+        .total {
+          p {
+            font-size: 0.8rem;
+            padding-bottom: 5px;
+          }
+
+          h3 {
+            font-size: 1.7rem;
+          }
+        }
+
+        .interest {
+          padding-top: 20px;
+          p {
+            font-size: 0.8rem;
+            text-align: right;
+            padding-left: 5px;
+            font-weight: 700;
+          }
+
+          h3 {
+            font-size: 0.8rem;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+}
+
+@import "desktop";

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Frontend Mentor | Expenses chart component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="container-content">
+          <div class="container-content-header">
+            <div class="balance">
+              <div class="amount">
+                <p>My balance</p>
+                <h1>$921.48</h1>
+              </div>
+              <div class="logo">
+                <svg
+                  width="72"
+                  height="48"
+                  viewBox="0 0 72 48"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g fill="none" fill-rule="evenodd">
+                    <circle fill="#382314" cx="48" cy="24" r="24" />
+                    <circle
+                      stroke="#FFF"
+                      stroke-width="2"
+                      cx="24"
+                      cy="24"
+                      r="23"
+                    />
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="container-content-body">
+            <h2>Spending - Last 7 days</h2>
+            <canvas id="myChart" width="400" height="280"></canvas>
+            <hr />
+            <div class="container-content-footer">
+              <div class="footer">
+                <div class="total">
+                  <p>Total this month</p>
+                  <h3>$478.33</h3>
+                </div>
+                <div class="interest">
+                  <p>+2.4%</p>
+                  <h3>from last month</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/ajormoses">AJOR MOSES</a>.
+      </div>
+    </main>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/chart.js"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
